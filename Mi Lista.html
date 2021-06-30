@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Lista</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link rel="stylesheet" href="css/pruebacss.css">
-    <meta name="description" content="Este es la sección del sitio web de Sage en el cual podrás encontrar las listas creadas">
+    <meta name="description" content="Este es el sitio web de Sage en el cual podrás hacer listas personalizadas de tu contenido favorito">
+    <meta name="keywords"  content="SERIES, PELICULAS, ANIME">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body style="background-color: rgb(233, 227, 227)">
@@ -15,7 +18,7 @@
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><a href="index.html"><img src="Imagenes/SageLogo.png" alt="ImageUno" width="100px" title="Sage Logo"></a>
+            <a class="navbar-brand" href="#"><a href="index.html"><img src="Imagenes/SageLogo.png" alt="ImageUno" width="75px" title="Sage Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -23,9 +26,6 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active" href="Random.html">Random</a>
                 </li>
                 <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle active" href="Mi Lista.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -39,16 +39,8 @@
                     <li><a class="dropdown-item" href="Mi Lista.html">Mis Animes</a></li>
                 </ul>
                 </li>
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active" href="Mas.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Mas
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="Mas.html">Configuracion</a></li>
-                    <li><a class="dropdown-item" href="Mas.html">Bases y Condiciones</a></li>
-                    <li><a class="dropdown-item" href="Mas.html">Beneficios del servicio</a></li>
-                    <li><a class="dropdown-item" href="Mas.html">Contacto</a></li>
-                </ul>
+                <li class="nav-item">
+                    <a class="nav-link active" href="Mas.html">Contacto</a>
                 </li>
             </ul>
             <form class="d-flex">
@@ -61,30 +53,80 @@
     
     <section class="titulos--1">
         <h2>Mi Lista General</h2>
-    </section>
-
-    <section class="titulos--1">
+        <div class="cardflexrow">
+            <div class="cardflexrow--transicion item1"><img src="Imagenes/Hannibal Poster.jpg" width="350" alt="Hannibal" title="Hannibal 4ta Temporada"></div>
+            <div class="cardflexrow--transicion item2"><img src="Imagenes/Death Note Poster.jpg" width="350"  alt="DeathNote" title="Death Note"></div>
+            <div class="cardflexrow--transicion item3"><img src="Imagenes/Juego de Tronos Poster.jpg" width="350" alt="Juego de Tronos" title="Juego de Tronos 2da Temporada"></div>
+            <div class="cardflexrow--transicion item4"><img src="Imagenes/Juego de Tronos Poster.jpg" width="350" alt="Juego de Tronos" title="Juego de Tronos 2da Temporada"></div>
+            <div class="cardflexrow--transicion item5"><img src="Imagenes/Juego de Tronos Poster.jpg" width="350" alt="Juego de Tronos" title="Juego de Tronos 2da Temporada"></div>
+        </div>
+    <section id="lista" class="titulos--1">
         <h2>Mis Series</h2>
+        <div class="cardflexrow">
+            <div class="cardflexrow--transicion item1"><img src="Imagenes/Hannibal Poster.jpg" width="350" alt="Hannibal" title="Hannibal 4ta Temporada"></div>
+            <div class="cardflexrow--transicion item1"><img src="Imagenes/Shang Chi Poster.jpg" width="350" alt="Shang Chi" title="Shang Chi"></div>
+            <div class="cardflexrow--transicion item3"><img src="Imagenes/Juego de Tronos Poster.jpg" width="350" alt="Juego de Tronos" title="Juego de Tronos 2da Temporada"></div>
+            <div class="cardflexrow--transicion item5"><img src="Imagenes/Demon Slayer Poster.jpg" width="350" alt="Demon Slayer" title="Demon Slayer Nueva Pelicula"></div>
+        </div>
     </section>
     
     <section class="titulos--1">
         <h2>Mis Peliculas</h2>
+        <div class="cardflexrow">
+            <div class="cardflexrow--transicion item1"><img src="Imagenes/Hannibal Poster.jpg" width="350" alt="Hannibal" title="Hannibal 4ta Temporada"></div>
+            <div class="cardflexrow--transicion item2"><img src="Imagenes/Death Note Poster.jpg" width="350"  alt="DeathNote" title="Death Note"></div>
+            <div class="cardflexrow--transicion item4"><img src="Imagenes/Fate Poster.jpg" width="350" alt="Fate Havens Feel 3" title="Fate Havens Feel 3"></div>
+            <div class="cardflexrow--transicion item5"><img src="Imagenes/Demon Slayer Poster.jpg" width="350" alt="Demon Slayer" title="Demon Slayer Nueva Pelicula"></div>
+            <div class="cardflexrow--transicion item5"><img src="Imagenes/Juego de Tronos Poster.jpg" width="350" alt="Juego de Tronos" title="Juego de Tronos 2da Temporada"></div>
+        </div>
     </section>
     
     <section class="titulos--1">
         <h2>Mis Animes</h2>
+        <div class="cardflexrow">
+            <div class="cardflexrow--transicion item4"><img src="Imagenes/Fate Poster.jpg" width="350" alt="Fate Havens Feel 3" title="Fate Havens Feel 3"></div>
+            <div class="cardflexrow--transicion item2"><img src="Imagenes/Death Note Poster.jpg" width="350"  alt="DeathNote" title="Death Note"></div>
+            <div class="cardflexrow--transicion item5"><img src="Imagenes/Demon Slayer Poster.jpg" width="350" alt="Demon Slayer" title="Demon Slayer Nueva Pelicula"></div>
+            <div class="cardflexrow--transicion item2"><img src="Imagenes/Shingeki no Kyojin Poster.jpg" width="350" alt="Shingeki" title="Shingeki no Kyojin 4ta Temporada"></div>
+        </div>
     </section>
 
     <br><br>
     
     <!--Footer-->
-    <br><br>
     <footer>
-        <h3 class="footer__tipo" id="grad">Información de contacto</h3>
-        <div class="cardcenter">
-            <div class="cardcenter__item"><img src="Imagenes/Instagram Logo.png" alt="InstaL" width="50" title="Instagram"></div>
-            <div class="cardcenter__item"><img src="Imagenes/SageLogo.png" alt="SageLogo" width="100" title="Sage Logo"></div>
-            <div class="cardcenter__item"><img src="Imagenes/Twitter Logo.png" alt="TwitterL" width="50" title="Twitter"></div>
+        <div class="container">
+            <div class="sec aboutus">
+                <h4>Sobre Nosotros</h4>
+                <p>Presentamos la nueva pagina de Sage, para que tengas ordenado y al dia tus mejores peliculas, series, comics, etc. y conocer las ultimas novedades de las plataformas</p>
+                <ul class="sci">
+                    <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec contactopers">
+                <h4>Contacto</h4>
+                <ul class="info">
+                    <li>
+                        <span><i class="fas fa-user"></i></span>
+                        <span>Martín Belizán</span>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <span>Boulogne, San Isidro, Buenos Aires, Argentina</span>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope"></i></span>
+                        <span>martinbelizan@gmail.com</span>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone"></i></span>
+                        <span>+54 911-6232-5525</span>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 

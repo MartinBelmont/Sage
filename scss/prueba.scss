@@ -27,7 +27,7 @@
     justify-content: space-evenly;  
     text-align: center;  
     padding: 0px;  
-    margin: 1px;  
+    margin: 0;  
     flex-wrap: wrap;
 }
 
@@ -43,6 +43,39 @@
         width: 200px;
         border-radius: 20px;
         transition: all 0.5s ease;
+    }
+}
+
+@media (max-width: 439px){
+
+    .item3, .item1, .item2,.item4,.item4{
+        flex-direction: column;
+    }
+    .item3, .item1, .item2,.item4,.item4{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 599px){
+
+    .item3 .item1{
+        flex-direction: column;
+    }
+    .item3, .item1{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 1081px){
+
+    .item3{
+        flex-direction: column;
+    }
+    .item3{
+        margin-right: 0;
+        margin-bottom: 40px;
     }
 }
 
@@ -62,7 +95,7 @@
 .blocknoticias {
 
     img {
-        height: 300px;
+        height: 600px;
         overflow: hidden;
         object-fit: cover;
         position: relative;
@@ -137,10 +170,10 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
-    "nav"  
-    "useries"
+    "nav"
     "noticias"
-    "tseries"
+    "tseries"  
+    "useries"
     "trailers"
     "footer";
 }
@@ -164,6 +197,7 @@
     grid-area: footer;
     }     
 
+/*RESPONSIVE*/
 
 @media only screen and (min-width: 320px) {
 
@@ -174,9 +208,9 @@
         grid-gap:1rem;
         grid-template-areas: 
         "nav nav"  
-        "useries useries"
         "noticias noticias"
         "tseries tseries"
+        "useries useries"
         "trailers trailers"
         "footer footer";
       }
@@ -204,16 +238,17 @@
 
     #grilla {
         display: grid; 
-        grid-template-columns: auto auto 40%;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
         "nav nav nav"
-        "useries useries noticias"
+        "noticias noticias noticias"
         "tseries tseries tseries"
+        "useries useries useries"
         "trailers trailers trailers"
         "footer footer footer";
         grid-column-gap: 10px;
-        grid-row-gap: 10px;
+        grid-row-gap: 0;
         height: 100vh; 
         }
     }
@@ -225,7 +260,7 @@
     }
     section#useries {
         grid-area: useries;
-        margin: 0;  
+        margin: 10px;  
     }
     section#noticias {
         grid-area: noticias;  
@@ -243,6 +278,7 @@
         grid-area: nav;
     }
 
+
 /*TIPOGRAFIA*/
     
 h1 {
@@ -254,13 +290,14 @@ h1 {
 
 .titulos--1{
     h2 {
-        color: salmon;
+        color: white;
         font-family: 'Roboto';
+        font-size: 28px;
         font-weight: bold;
         text-align: center;
-        background-color: black;
+        background-color: brown;
         border-radius: 20px;
-        margin: 10px;
+        margin: 20px;
         animation-duration: 1s;
         animation-name: bordeado;
     }
@@ -335,6 +372,86 @@ section article {
     border-radius: 10px;
 }
 
+/*CONTACTO*/
+
+.contacto{
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: rgb(255, 176, 176);
+    position: relative;
+    box-shadow: 0 10px 20px 0px rgb(255, 160, 160);
+    border-radius: 2em;
+    padding: 30px;
+}
+
+.contacto .titulo{
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 3em;
+    line-height: 48px;
+    padding-bottom: 20px;
+    color: rgb(170, 35, 35);
+    background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(170, 35, 35) 100%);
+    background-clip: '';
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-form .form-field{
+    position: relative;
+    margin: 32px 0;
+}
+
+.contact-form .input-text{
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: rgb(170, 35, 35);
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.contact-form .input-text:focus + .label,
+.contact-form .input-text.not-empty + .label{
+    transform: translateY(-24px);
+}
+.contact-form .input-text:focus{
+    outline: none;
+}
+
+.contact-form .label{
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: black;
+    cursor: text;
+    text-transform: capitalize;
+    transition: transform 0.2s ease-in-out;
+}
+
+.contact-form .submit-btn{
+    display: inline-block;
+    border-radius: 1em;
+    background-image: linear-gradient(125deg, rgb(170, 35, 35), rgb(211, 88, 88));
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    width: 200px;
+    cursor: pointer;
+
+}
+
+
 /*FOOTER*/
 
 .footer__tipo {
@@ -360,4 +477,131 @@ section article {
 
 #grad {
     background-image: linear-gradient(brown, red);
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .container .sec{
+    margin-right: 30px;
+}
+
+footer .container .sec.aboutus{
+    width: 40%;
+}
+
+footer .container h4{
+    position: relative;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .container h4:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 70px;
+    height: 2px;
+    background: rgb(170, 35, 35);
+}
+
+footer p{
+    color: grey;
+}
+
+.sci {
+    margin-top: 20px;
+    display: flex;
+    padding: 0;
+}
+
+.sci li{
+    list-style: none;
+}
+
+.sci li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sci li a:hover{
+    background: rgb(170, 35, 35);
+}
+
+.sci li a .fab{
+    color: white;
+    font-size: 20px;
+}
+
+.contactopers{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+
+.contactopers .info{
+    position: relative;    
+    padding: 0;
+}
+
+.contactopers .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contactopers .info li span:nth-child(1){
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contactopers .info li span {
+    color: grey;
+}
+
+.contactopers .info li span a{
+    color: grey;
+    text-decoration: none;
+}
+
+@media (max-width: 991px){
+
+    footer{
+        padding: 40px;
+    }
+
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container .sec{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .container .sec.aboutus, .contactopers{
+        width: 100%;
+    }
 }
