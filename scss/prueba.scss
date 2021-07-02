@@ -411,8 +411,10 @@ section article {
     margin: 40px auto;
     background-color: rgb(255, 176, 176);
     position: relative;
+    border-color: rgb(156, 9, 9);
+    border-style: outset;
+    border-width: 2em;
     box-shadow: 0 10px 20px 0px rgb(255, 160, 160);
-    border-radius: 2em;
     padding: 30px;
 }
 
@@ -569,6 +571,80 @@ section#ver {
     font-size: 20px;
 }
 
+.bodyimage{
+    background-color: blue;
+    opacity: 0.7;
+}
+
+/*SOBRE NOSOTROS*/
+
+.nosotros-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 55%;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: #ffffff;
+    border-color: rgb(156, 9, 9);
+    border-style: outset;
+    border-width: 2em;
+    padding: 150px;
+}
+
+.inner-container h1{
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 17px;
+    color: #545454;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .nosotros-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .nosotros-section{
+        padding: 0;
+    }
+    .inner-container{
+        border-radius: 0;
+        padding: 60px;
+    }
+    .inner-container{
+        border-width: 1em;
+    }
+    .contacto{
+        border-radius: 0;
+        border-width: 1em;
+    }
+}
 
 
 /*FOOTER*/

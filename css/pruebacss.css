@@ -299,8 +299,10 @@ section article {
   margin: 40px auto;
   background-color: #ffb0b0;
   position: relative;
+  border-color: #9c0909;
+  border-style: outset;
+  border-width: 2em;
   box-shadow: 0 10px 20px 0px #ffa0a0;
-  border-radius: 2em;
   padding: 30px; }
 
 .contacto .titulo {
@@ -432,6 +434,64 @@ section#ver h4 {
 .ran li a .fas {
   color: white;
   font-size: 20px; }
+
+.bodyimage {
+  background-color: blue;
+  opacity: 0.7; }
+
+/*SOBRE NOSOTROS*/
+.nosotros-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 55%;
+  overflow: hidden;
+  padding: 100px 0; }
+
+.inner-container {
+  width: 55%;
+  float: right;
+  background-color: #ffffff;
+  border-color: #9c0909;
+  border-style: outset;
+  border-width: 2em;
+  padding: 150px; }
+
+.inner-container h1 {
+  color: black;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 900; }
+
+.text {
+  font-size: 17px;
+  color: #545454;
+  line-height: 30px;
+  text-align: center; }
+
+@media screen and (max-width: 1200px) {
+  .inner-container {
+    padding: 80px; } }
+
+@media screen and (max-width: 1000px) {
+  .nosotros-section {
+    background-size: 100%;
+    padding: 100px 40px; }
+  .inner-container {
+    width: 100%; } }
+
+@media screen and (max-width: 600px) {
+  .nosotros-section {
+    padding: 0; }
+  .inner-container {
+    border-radius: 0;
+    padding: 60px; }
+  .inner-container {
+    border-width: 1em; }
+  .contacto {
+    border-radius: 0;
+    border-width: 1em; } }
 
 /*FOOTER*/
 .footer__tipo {
